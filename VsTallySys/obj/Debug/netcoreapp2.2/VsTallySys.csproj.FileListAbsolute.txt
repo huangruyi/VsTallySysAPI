@@ -1,0 +1,15 @@
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\bin\Debug\netcoreapp2.2\VsTallySys.deps.json
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\bin\Debug\netcoreapp2.2\VsTallySys.runtimeconfig.json
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\bin\Debug\netcoreapp2.2\VsTallySys.runtimeconfig.dev.json
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\bin\Debug\netcoreapp2.2\VsTallySys.dll
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\bin\Debug\netcoreapp2.2\VsTallySys.pdb
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\obj\Debug\netcoreapp2.2\VsTallySys.csprojAssemblyReference.cache
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\obj\Debug\netcoreapp2.2\VsTallySys.csproj.CoreCompileInputs.cache
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\obj\Debug\netcoreapp2.2\VsTallySys.RazorAssemblyInfo.cache
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\obj\Debug\netcoreapp2.2\VsTallySys.RazorAssemblyInfo.cs
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\obj\Debug\netcoreapp2.2\VsTallySys.AssemblyInfoInputs.cache
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\obj\Debug\netcoreapp2.2\VsTallySys.AssemblyInfo.cs
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\obj\Debug\netcoreapp2.2\VsTallySys.RazorTargetAssemblyInfo.cache
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\obj\Debug\netcoreapp2.2\VsTallySys.dll
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\obj\Debug\netcoreapp2.2\VsTallySys.pdb
+C:\01---项目代码\记账系统\VsTallySys\VsTallySys\bin\Debug\netcoreapp2.2\VsTallySys.xml
