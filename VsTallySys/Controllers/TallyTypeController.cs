@@ -41,10 +41,11 @@ namespace VsTallySys.Controllers
         /// </summary>
         /// <param name="sName"></param>
         /// <param name="sCode"></param>
+        /// <param name="sType"></param>
         /// <param name="sDesc"></param>
         /// <returns></returns>
         [HttpPost]
-        public OkObjectResult Post(string sName, string sCode, string sDesc)
+        public OkObjectResult Post(string sName, string sCode, string sType, string sDesc)
         {
             VsTallyType entity = new VsTallyType
             {
@@ -52,6 +53,7 @@ namespace VsTallySys.Controllers
                 SName = sName,
                 SCode = sCode,
                 SDesc = sDesc,
+                SType = sType,
             };
             string error = "";
             int res = _tallyTypeService.TryAdd(out error, entity);
@@ -68,10 +70,11 @@ namespace VsTallySys.Controllers
         /// <param name="id"></param>
         /// <param name="sName"></param>
         /// <param name="sCode"></param>
+        /// <param name="sType"></param>
         /// <param name="sDesc"></param>
         /// <returns></returns>
         [HttpPut]
-        public OkObjectResult Put(string id, string sName, string sCode, string sDesc)
+        public OkObjectResult Put(string id, string sName, string sCode, string sType, string sDesc)
         {
             if (string.IsNullOrEmpty(id))
             {
@@ -85,6 +88,7 @@ namespace VsTallySys.Controllers
             pExit.SName = sName;
             pExit.SCode = sCode;
             pExit.SDesc = sDesc;
+            pExit.SType = sType;
             string error = "";
             int res = _tallyTypeService.TryUpdate(out error, pExit);
             if (res == 0)

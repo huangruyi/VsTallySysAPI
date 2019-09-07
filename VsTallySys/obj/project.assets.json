@@ -12193,11 +12193,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\01---项目代码\\记账系统\\VsTallySys\\VsTallySys\\VsTallySys.csproj",
+      "projectUniqueName": "C:\\01---项目代码\\记账系统\\VsTallySys---本地\\VsTallySys\\VsTallySys.csproj",
       "projectName": "VsTallySys",
-      "projectPath": "C:\\01---项目代码\\记账系统\\VsTallySys\\VsTallySys\\VsTallySys.csproj",
+      "projectPath": "C:\\01---项目代码\\记账系统\\VsTallySys---本地\\VsTallySys\\VsTallySys.csproj",
       "packagesPath": "C:\\Users\\hry\\.nuget\\packages\\",
-      "outputPath": "C:\\01---项目代码\\记账系统\\VsTallySys\\VsTallySys\\obj\\",
+      "outputPath": "C:\\01---项目代码\\记账系统\\VsTallySys---本地\\VsTallySys\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

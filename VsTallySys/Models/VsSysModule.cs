@@ -20,5 +20,10 @@ namespace VsTallySys.Models
         /// </summary>
         [NotMapped]
         public List<VsSysModule> ModuleChildren { get; set; } = new List<VsSysModule>();
+        /// <summary>
+        /// 接口节点
+        /// </summary>
+        [NotMapped]
+        public List<VsSysApiModule> ApiModuleChildren { get; set; } = new List<VsSysApiModule>();
     }
 }

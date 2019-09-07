@@ -135,6 +135,11 @@ namespace VsTallySys.Models
                     .IsRequired()
                     .HasColumnName("S_OWNER")
                     .HasMaxLength(50);
+
+                entity.Property(e => e.STCode)
+                    .IsRequired()
+                    .HasColumnName("S_T_CODE")
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<VsStorageDetail>(entity =>
@@ -215,6 +220,8 @@ namespace VsTallySys.Models
 
                 entity.Property(e => e.ILevel).HasColumnName("I_LEVEL");
 
+                entity.Property(e => e.IOrder).HasColumnName("I_ORDER");
+
                 entity.Property(e => e.SIcon)
                     .HasColumnName("S_ICON")
                     .HasMaxLength(50);
@@ -232,8 +239,6 @@ namespace VsTallySys.Models
                     .IsRequired()
                     .HasColumnName("S_PARENTID")
                     .HasMaxLength(50);
-
-                entity.Property(e => e.IOrder).HasColumnName("I_ORDER");
             });
 
             modelBuilder.Entity<VsSysPower>(entity =>
@@ -328,6 +333,10 @@ namespace VsTallySys.Models
 
                 entity.Property(e => e.SDesc).HasColumnName("S_DESC");
 
+                entity.Property(e => e.SEmail)
+                    .HasColumnName("S_EMAIL")
+                    .HasMaxLength(50);
+
                 entity.Property(e => e.SLogo).HasColumnName("S_LOGO");
 
                 entity.Property(e => e.SName)
@@ -337,6 +346,10 @@ namespace VsTallySys.Models
                 entity.Property(e => e.SPassword)
                     .IsRequired()
                     .HasColumnName("S_PASSWORD")
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.SPhone)
+                    .HasColumnName("S_PHONE")
                     .HasMaxLength(50);
             });
 
@@ -360,6 +373,10 @@ namespace VsTallySys.Models
                     .IsRequired()
                     .HasColumnName("S_NAME")
                     .HasMaxLength(50);
+                entity.Property(e => e.SType)
+                   .IsRequired()
+                   .HasColumnName("S_TYPE")
+                   .HasMaxLength(50);
             });
         }
     }

@@ -39,12 +39,14 @@ namespace VsTallySys.Controllers
         /// </summary>
         /// <param name="dTime"></param>
         /// <param name="dRmb"></param>
+        /// <param name="sName"></param>
+        /// <param name="sTCode"></param>
         /// <param name="sCode"></param>
         /// <param name="sDesc"></param>
         /// <param name="sOwner"></param>
         /// <returns></returns>
         [HttpPost]
-        public OkObjectResult Post(DateTime dTime, double dRmb, string sName, string sCode, string sDesc, string sOwner)
+        public OkObjectResult Post(DateTime dTime, double dRmb, string sName, string sTCode, string sCode, string sDesc, string sOwner)
         {
             VsSpendingDetail entity = new VsSpendingDetail
             {
@@ -54,6 +56,7 @@ namespace VsTallySys.Controllers
                 SCode = sCode,
                 SDesc = sDesc,
                 SOwner = sOwner,
+                STCode = sTCode
             };
             string error = "";
             int res = _spendingDetailService.TryAdd(out error, entity);
@@ -68,14 +71,17 @@ namespace VsTallySys.Controllers
         /// <summary>
         /// 修改支出详情信息
         /// </summary>
+        /// <param name="id"></param>
         /// <param name="dTime"></param>
         /// <param name="dRmb"></param>
+        /// <param name="sName"></param>
+        /// <param name="sTCode"></param>
         /// <param name="sCode"></param>
         /// <param name="sDesc"></param>
         /// <param name="sOwner"></param>
         /// <returns></returns>
         [HttpPut]
-        public OkObjectResult Put(string id, DateTime dTime, double dRmb, string sName, string sCode, string sDesc, string sOwner)
+        public OkObjectResult Put(string id, DateTime dTime, double dRmb, string sName, string sTCode, string sCode, string sDesc, string sOwner)
         {
             if (string.IsNullOrEmpty(id))
             {
@@ -93,6 +99,7 @@ namespace VsTallySys.Controllers
             pExist.SCode = sCode;
             pExist.SDesc = sDesc;
             pExist.SOwner = sOwner;
+            pExist.STCode = sTCode;
 
             string error = "";
             int res = _spendingDetailService.TryUpdate(out error, pExist);

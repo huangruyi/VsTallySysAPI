@@ -48,10 +48,12 @@ namespace VsTallySys.Controllers
         /// <param name="name"></param>
         /// <param name="logo"></param>
         /// <param name="desc"></param>
+        /// <param name="email"></param>
+        /// <param name="phone"></param>
         /// <returns></returns>
         [HttpPost]
         [AllowAnonymous]
-        public OkObjectResult Post(string username, string password, string name, string logo, string desc)
+        public OkObjectResult Post(string username, string password, string name, string logo, string desc, string email, string phone)
         {
             VsSysUser pExist = _userService.QueryByID(username);
             if (pExist != null)
@@ -84,7 +86,9 @@ namespace VsTallySys.Controllers
                 SName = name,
                 DCreatetime = DateTime.Now.ToLocalTime(),
                 SLogo = logo,
-                SDesc = desc
+                SDesc = desc,
+                SEmail = email,
+                SPhone = phone
             };
             string error = "";
             int res = _userService.TryAdd(out error, entity);
@@ -102,9 +106,11 @@ namespace VsTallySys.Controllers
         /// <param name="name"></param>
         /// <param name="logo"></param>
         /// <param name="desc"></param>
+        /// <param name="email"></param>
+        /// <param name="phone"></param>
         /// <returns></returns>
         [HttpPut]
-        public OkObjectResult Put(string username, string name, string logo, string desc)
+        public OkObjectResult Put(string username, string name, string logo, string desc, string email, string phone)
         {
             if (string.IsNullOrEmpty(username))
             {
@@ -123,6 +129,8 @@ namespace VsTallySys.Controllers
             pExist.DUpdatetime = DateTime.Now.ToLocalTime();
             pExist.SLogo = logo;
             pExist.SDesc = desc;
+            pExist.SEmail = email;
+            pExist.SPhone = phone;
             string error = "";
             int res = _userService.TryUpdate(out error, pExist);
             if (res == 0)

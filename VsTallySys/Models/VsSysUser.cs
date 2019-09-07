@@ -13,5 +13,7 @@ namespace VsTallySys.Models
         public string SLogo { get; set; }
         public string SDesc { get; set; }
         public DateTime? DUpdatetime { get; set; }
+        public string SEmail { get; set; }
+        public string SPhone { get; set; }
     }
 }

@@ -9,5 +9,6 @@ namespace VsTallySys.Models
         public string SName { get; set; }
         public string SCode { get; set; }
         public string SDesc { get; set; }
+        public string SType { get; set; }
     }
 }

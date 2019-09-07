@@ -12,5 +12,6 @@ namespace VsTallySys.Models
         public string SCode { get; set; }
         public string SDesc { get; set; }
         public string SOwner { get; set; }
+        public string STCode { get; set; }
     }
 }
